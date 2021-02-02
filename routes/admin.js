@@ -98,7 +98,7 @@ router.post("/productnew",upload.single('product_IMG'), function(req, res){
                  conn.query(selectUserSQL, param1, function(err, row){
                     if(err){ console.log(err)}
                     else{
-                        console.log(row[0].seq+"sssssssssssssssssssssssssssssssssssssssssssssssssssssssss")
+                        console.log(row[0].seq+"들고왔냐???")
                         console.log("회원 번호 조회가 성공하셨습니다. 회원 알레르기 입력을 시작합니다.");
                         allergy.forEach(function(element){
                             console.log("알레르기 삭제 번호 : "+element)
