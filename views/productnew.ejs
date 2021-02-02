@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>음식 등록하기</title>
+</head>
+<body>
+<h3>음식 등록</h3>
+<form action="/admin/productnew" method="post" encType='multipart/form-data'>
+    <div>
+        <div>
+            <div>음식 명 : </div>
+            <div><input type="text" name="product_NAME"></div>
+        </div>
+        <div>
+            <div>카테고리 : </div>
+            <div><input type="text" name="product_CATEGORY"></div>
+        </div>
+        <div>
+            <div>사진 : </div>
+            <div><input type="file" name="product_IMG" accept='image/jpg, image/png, image/jpeg'></div>
+        </div>
+        <div>
+            <div>가격 : </div>
+            <div><input type="text" name="product_PRICE"></div>
+        </div>
+        <div>
+            <div>설명 : </div>
+            <div><input type="text" name="product_DETAIL"></div>
+        </div>
+        <br>
+        <div>주재료 알러지 : </div>
+        <div style="height: 70px;">
+            <div>
+                <!--BEGIN CheckBox totale1-->
+                <input type="checkbox" id="sondaggitotale-1" value="1" name="allergy"><label><strong>우유&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-2" value="2" name="allergy"><label><strong>계란&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-3" value="3" name="allergy"> <label><strong>밀&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-4" value="4" name="allergy"><label><strong>콩&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-5" value="5" name="allergy"><label><strong>고등어&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-6" value="6" name="allergy"><label><strong>꽃게&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-7" value="7" name="allergy"><label><strong>새우&nbsp;</strong></label>
+                <br>
+                
+                <input type="checkbox" id="sondaggitotale-8" value="8" name="allergy"><label><strong>복숭아&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-9" value="9" name="allergy"><label><strong>토마토&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-10" value="10" name="allergy"><label><strong>아황산류&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-11" value="11" name="allergy"><label><strong>호두&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-12" value="12" name="allergy"><label><strong>쇠고기&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-13" value="13" name="allergy"><label><strong>닭고기&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-14" value="14" name="allergy"><label><strong>오징어&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-15" value="15" name="allergy"><label><strong>조개류&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-16" value="16" name="allergy"><label><strong>잣&nbsp;</strong></label>
+                                    <!--END CheckBox totale1-->
+            </div>
+        <div>
+            <br>
+        <div>보조재료 알러지 : </div>
+        <div style="height: 70px;">
+            <div>
+                <!--BEGIN CheckBox totale1-->
+                <input type="checkbox" id="sondaggitotale-1" value="1" name="allergy1"><label><strong>우유&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-2" value="2" name="allergy1"><label><strong>계란&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-3" value="3" name="allergy1"> <label><strong>밀&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-4" value="4" name="allergy1"><label><strong>콩&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-5" value="5" name="allergy1"><label><strong>고등어&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-6" value="6" name="allergy1"><label><strong>꽃게&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-7" value="7" name="allergy1"><label><strong>새우&nbsp;</strong></label>
+                <br>
+                
+                <input type="checkbox" id="sondaggitotale-8" value="8" name="allergy1"><label><strong>복숭아&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-9" value="9" name="allergy1"><label><strong>토마토&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-10" value="10" name="allergy1"><label><strong>아황산류&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-11" value="11" name="allergy1"><label><strong>호두&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-12" value="12" name="allergy1"><label><strong>쇠고기&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-13" value="13" name="allergy1"><label><strong>닭고기&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-14" value="14" name="allergy1"><label><strong>오징어&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-15" value="15" name="allergy1"><label><strong>조개류&nbsp;</strong></label>
+                <input type="checkbox" id="sondaggitotale-16" value="16" name="allergy1"><label><strong>잣&nbsp;</strong></label>
+                                    <!--END CheckBox totale1-->
+            </div>
+        <div>
+            <div><input type="submit" value="등록하기"></div>
+        </div>
+
+    </div>
+</form>        
+</body>
+
+</html>

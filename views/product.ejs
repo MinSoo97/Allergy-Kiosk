@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+<head>
+    <%- include ('top/head.ejs') %>
+  
+  </head>
+  <body>
+  <div><%- include ('top/nav.ejs') %></div>
+  </body>
+  <body>
+  
+    <h1>메뉴 관리</h1>
+    <form action='/admin/productnew'><button class="btn btn-outline-success my-2 my-sm-0">추가하기</button></form>
+  
+    <table id="orderinfo" class="table-bordered  a">
+      <thead>
+      <tr>
+        <td align='center'>순번</td>
+        <td align='center'>이름</td>
+        <td align='center'>카테고리</td>
+        <td align='center'>이미지</td>
+        <td align='center'>가격</td>
+        <td align= 'center'>설명</td>
+      </tr> 
+      </thead>
+      
+      <tbody>
+        <% for(var i = 0; i < product.length; i++ ) { %>
+          <tr onclick="location.href='#'">
+            <td align='center'><%= i+1 %></td>
+            <td><%= product[i].name %></td>
+            <td><%= product[i].category %></td>
+            <td style="width:20%"><img width="100%" src="<%= product[i].img %>"></td>
+            <td><%= product[i].price %></td>
+            <td><%= product[i].detail %></td>
+            <% if(sess == 'kms3323') { %>
+    
+            <td align='center'><form action='#'><button class="btn btn-outline-success my-2 my-sm-0">수정</button></form></td>
+            <% } %>
+    
+          </tr>
+        <% } %>
+        </tbody>
+    </table>
+    </body>
+    </head>
+    </html>

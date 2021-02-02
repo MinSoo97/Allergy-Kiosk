@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">업체용 웹</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          
+          <% if(sess === undefined) { %>
+            <a class="nav-link" href="/company/login">로그인</a>
+            <li><a class="nav-link" href='/company/signup' >회원가입</a></li>
+  
+          <% } else { %>
+            <a class="nav-link" href="/company/login">로그아웃</a>
+  
+          <% } %>
+  
+        </li>
+        <% if(sess == undefined) {%>
+        <a class="nav-link"> 알레르기를 미리 예방하는 삶을 가집시다<a>
+        <% } else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/company/orderState">주문 목록</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/product">메뉴 관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kiosk">키오스크</a>
+          </li>
+          <% } %>
+      </ul>
+    
+    </div>
+  </nav>
